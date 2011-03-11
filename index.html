@@ -14,72 +14,33 @@
 <script type="text/javascript" src="http://www/~alexander/jQuery.twFile.js"></script>
 
 <script type = "text/javascript" src="http://www/~alexander/action.js"></script>
+<link rel="stylesheet" href="http://www/~alexander/myStyle.css" type="text/css" media="screen" charset="utf-8"></link>
 
 <script type="text/javascript" src="http://www/~alexander/elrte-1.2/js/elrte.full.js"></script>
 <script type="text/javascript" src="http://www/~alexander/elrte-1.2/js/i18n/elrte.de.js"></script>
 
-
-<style type="text/css">
-
-body{
-	background-color:	#3F3F3F;
-}
-
-#MAIN_DIV
-{
-  position:					absolute;
-  width:						1000px;
-  height:						700px;
-  top:							50%;
-  left:							50%;
-  margin-top:				-350px;
-  margin-left:			-500px;
-  overflow: 				hidden;
-  background-color:	#29496F;
-  border:						2px solid white;
-}
-
-
-#dataContentDiv{
-    overflow:   	auto;
-    position:   	absolute;
-    top:        	10px;
-		left:					10px;
-		margin-left:	10px;
-		margin-right: 10px;
-}
-
-#textData{
-		display:	none;
-}
-</style>
-
-	
 </head>
 <body>
 		<div		id=	"MAIN_DIV"
-						>
-						<div		class="DATA_FIELD">
-																												
-										<!-- hier kommen jetzt die eigentlichen Experiment Daten rein -->
-										<div		id="dataContentDiv"
+						>						
+						<!-- hier kommen jetzt die eigentlichen Experiment Daten rein -->
+						<div		id="dataContentDiv"
+										>
+														
+										<form 	method=	"post"
+														action=	"somepage"
+														id=			"backGroundF"
+														class=	"mceForm"
 														>
-																		
-														<form 	method=	"post"
-																		action=	"somepage"
-																		id=			"backGroundF"
-																		class=	"mceForm"
-																		>
-																		<textarea 	class="mceEditor"
-																								id=		"backGroundTA"
-																								name=	"content"
-																								>
-																		</textarea>
-														</form>
-										</div>
+														<textarea 	class="mceEditor"
+																				id=		"backGroundTA"
+																				name=	"content"
+																				>
+														</textarea>
+										</form>
 						</div>
 						<div 		id="textData"
-										>dies ist ein test<br>&nbsp; noch ein satz  
+										>Ein Test<br>so ein &nbsp; Mist  
 </div>
 </div>
 </body>
